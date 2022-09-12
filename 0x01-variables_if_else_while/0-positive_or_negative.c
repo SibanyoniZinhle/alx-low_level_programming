@@ -3,27 +3,32 @@
 #include <stdio.h>
 
 /**
-*main - print if the number is positive, zero, or negative
-*
-*description: using the main function
-*this program prints "Programming is positive, zero, or negative
-*Return: 0
-*/
+ * main - entry point 
+ *
+ * Return: Always 0 (Success/Correct)
+ */
+
 int main(void)
+{
+int n;
 
 srand(time(0));
-n = rand () - RAND_MAX / 2;
- /* your code goes there */
-if (n > 0)
+n = rand () - RAND_MAX / 2;  
+
+if (n == 0)
 {
- printf(%i is positive\n", n);
+printf("%i is zero\n", n);
 }
-else if (n ==0)
-{
- printf("%i is zero\n", n);
-}
+
 else if (n < 0)
 {
- printf("%i is negative\n", n);
+printf("%i is negative\n", n);
 }
+
+else
+{
+printf("%i is positive\n", n);
+}
+
 return (0);
+}
