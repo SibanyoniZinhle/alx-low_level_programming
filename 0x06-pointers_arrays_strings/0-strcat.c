@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 /**
 
@@ -11,7 +13,6 @@
 
  */
 char *_strcat(char *dest, char *src)
-{
 int i, n;
 for (i = 0; dest[i] != '\0'; i++)
 {
