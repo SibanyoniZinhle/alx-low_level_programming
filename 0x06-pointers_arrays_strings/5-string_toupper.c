@@ -1,7 +1,5 @@
 #include "main.h"
 
-#include "holberton.h"
-
 /**
  * string_toupper - a function that changes all lower of a string to upper
  * @n: input string
@@ -18,4 +16,3 @@ char *string_toupper(char *n)
 	}
 	return (n);
 }
-
